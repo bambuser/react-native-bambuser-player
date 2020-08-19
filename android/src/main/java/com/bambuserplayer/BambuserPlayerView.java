@@ -24,6 +24,7 @@ public class BambuserPlayerView extends RelativeLayout {
     RelativeLayout mWrapperLayout;
     SurfaceViewWithAutoAR mVideoSurfaceView;
     BroadcastPlayer mBroadcastPlayer;
+    boolean hasAddedLayout = false;
     String _resourceUri;
     String _applicationId;
     String _videoScaleMode = "aspectFit";
@@ -50,19 +51,17 @@ public class BambuserPlayerView extends RelativeLayout {
         mWrapperLayout = new RelativeLayout(getContext());
         mWrapperLayout.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
         mWrapperLayout.setBackgroundColor(Color.parseColor("#000000"));
-        addView(mWrapperLayout);
         mVideoSurfaceView = new SurfaceViewWithAutoAR(getContext());
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
         layoutParams.addRule(RelativeLayout.CENTER_IN_PARENT, RelativeLayout.TRUE);
         mWrapperLayout.addView(mVideoSurfaceView, layoutParams);
-
     }
 
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         mWrapperLayout.layout(0, 0, right, bottom);
-        if (indexOfChild(mWrapperLayout) != 0) {
-            removeView(mWrapperLayout);
+        if (!hasAddedLayout) {
+            this.hasAddedLayout = true;
             addView(mWrapperLayout, 0);
         }
     }
