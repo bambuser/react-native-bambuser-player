@@ -2,7 +2,7 @@
   <br/><br />
   <p align="center">
     <a href="https://bambuser.com" target="_blank" align="center">
-        <img src="https://bambuser.com/wp-content/themes/bambuser/assets/images/logos/bambuser-logo-horizontal-black.png" width="280">
+        <img src="https://brand.bambuser.net/current/logo/bambuser-black-512.png" width="280">
     </a>
   </p>
   <br /><br />
