@@ -3,7 +3,7 @@
  */
 
 #import "BambuserPlayerView.h"
-#import "libbambuserplayer.h"
+#import <BambuserPlayer/BambuserPlayer.h>
 
 @interface BambuserPlayerView() <BambuserPlayerDelegate>
 @end
