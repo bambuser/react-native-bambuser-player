@@ -11,9 +11,11 @@
 
 ## Requirements
 
-Version `0.0.10` and above of this React Native component requires the version `0.9.22` or higher of the iOS libbambuser SDK.
-Version `0.0.13` and above of this React Native component requires React Native `0.60` or higher.
-Version `0.0.19` and above of this React Native component requires the version `0.9.28` of the iOS libbambuser SDK and version `0.9.21` of the Android libbambuser SDK.
+* Version `0.0.10` - `0.0.18`of this React Native component requires version `0.9.22` - `0.9.31` of the iOS libbambuser SDK.
+* Version `0.0.13` and above of this React Native component requires React Native `0.60` or higher.
+* Version `0.0.19` of this React Native component requires version `0.9.28` - `0.9.31` of the iOS libbambuser SDK
+* Version `0.0.19` and above of this React Native component requires version `0.9.21` of the Android libbambuser SDK.
+* Version `0.0.20` and above of this React Native component requires version `1.0.0` or higher of the iOS libbambuser SDK.
 
 ## Installation
 
